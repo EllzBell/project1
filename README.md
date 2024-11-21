@@ -12,7 +12,18 @@
 > ex: kuc_collect_multi_kline("BTC-USDT", "hour", 1, 10) results in a kline that is ~10,000 entries starting from the current time to ~10,000 hours ago.
 > to make data analysis easier using the pandas library [^3], another method change_to_datetime is provided which reads in the kline
 
-> In the project1.ipynb file, analysis of the bitcoin kline data are peformed to determine whether certain short term strategies can be employed to  
+> In the project1.ipynb file, analysis of the bitcoin kline data are peformed to determine whether certain simple strategies can be used to buy when bitcoin is low and sell when bit coin is high. The HLVResults.ipynb are part of a cursory look into whether there are any specific trends along the high and low price points. The closing price is focused on for analysis as it is the most likely price to be achieved by the trader (as it is the last price recorded for an interval).
+>
+> The analysis performed are as follows:
+> Correlations of volume changes and price changes
+> Correlations of time spans and price changes
+> Simulated strategy
+>
+## Correlations of Volume Changes and Price Changes
+>
+## Correlations of Time Spans and Price Changes
+>
+## Simulated Strategy
 
 [^1]:[Bitcoin Makes New All-Time High of $94,000...](https://www.coindesk.com/markets/2024/11/19/bitcoin-makes-new-all-time-high-of-93500-as-etf-options-go-live/)
 [^2]:https://www.kucoin.com/api
