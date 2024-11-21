@@ -22,6 +22,7 @@
 > Correlations of volume changes and price changes
 > Correlations of time spans and price changes
 > Simulated strategy
+> Time series fitting 
 >
 ## Correlations of Volume Changes and Price Changes
 > Using pandas libraries first determine the percent change for a twenty four hour basis.
@@ -84,7 +85,7 @@
 >Combined Strategies fail to achieve any significant difference from whichever is the larger time frame compared (ex: combined Monthly with Day of Week follows the Monthly pattern)
 
 ## Prophet Modelling
-> Prophet is a library that has prebuilt modules to easily fit time series data and observe trends as well as to make predictions. As Prophet models trends, the raw price data is fitted to Prophet parameters. For testing purposes a 720 hour future prediction is made. 
+> Prophet is a library that has prebuilt modules to easily fit time series data and observe trends as well as to make predictions. As Prophet[^4] models trends, the raw price data is fitted to Prophet parameters. For testing purposes a 720 hour future prediction is made. 
 >> Close Price Fitting and Prediction
 >> ![image](https://github.com/user-attachments/assets/48c3db27-d313-4ee0-96fc-fbdb159f9a7a)
 >> As expected the fitting has difficulty especially where there are large frequent swings in price. The true values are frequently outside of the error. The prediction suggested by Prophet's time series fitting falls completely outside of the trend of Bitcoin's closing prices which suggests that other variables are required or that the closing prices are not fittable. 
@@ -93,5 +94,6 @@
 > The suggestions here are that rudementary strategies to trade Bitcoin on a short term basis fail to beat out a basic HODL strategy when following the same time span. Future consideration is required of other strategies, cryptocurrency pairs, and relationships between data to fully determine if there is no possible short term strategy that would beat out the long term HODL.
 
 [^1]:[Bitcoin Makes New All-Time High of $94,000...](https://www.coindesk.com/markets/2024/11/19/bitcoin-makes-new-all-time-high-of-93500-as-etf-options-go-live/)
-[^2]:https://www.kucoin.com/api
+[^2]: https://www.kucoin.com/api
 [^3]: https://pandas.pydata.org/docs/
+[^4]: https://facebook.github.io/prophet/
